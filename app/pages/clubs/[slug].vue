@@ -33,66 +33,131 @@ if (!club) {
 </script>
 
 <template>
-  <main v-if="club">
-    <nav aria-label="Breadcrumb">
-      <NuxtLink to="/">Home</NuxtLink>
-      <span> / </span>
-      <NuxtLink to="/clubs">Clubs</NuxtLink>
-      <span> / </span>
+  <main v-if="club" class="space-y-10">
+    <nav aria-label="Breadcrumb" class="text-sm text-slate-600">
+      <NuxtLink class="hover:text-emerald-800 hover:underline" to="/"
+        >Home</NuxtLink
+      >
+      <span class="mx-2 text-slate-400">/</span>
+      <NuxtLink class="hover:text-emerald-800 hover:underline" to="/clubs"
+        >Clubs</NuxtLink
+      >
+      <span class="mx-2 text-slate-400">/</span>
       <span>{{ club.name }}</span>
     </nav>
 
-    <section>
+    <section
+      class="space-y-4 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm"
+    >
       <p>
-        <NuxtLink to="/clubs">← Back to all clubs</NuxtLink>
+        <NuxtLink
+          class="text-sm font-medium text-emerald-800 hover:underline"
+          to="/clubs"
+        >
+          ← Back to all clubs
+        </NuxtLink>
       </p>
 
-      <h1>{{ club.name }}</h1>
+      <div class="max-w-3xl space-y-4">
+        <h1 class="text-4xl font-bold tracking-tight text-slate-900">
+          {{ club.name }}
+        </h1>
 
-      <p v-if="club.description">
-        {{ club.description }}
+        <p v-if="club.description" class="leading-8 text-slate-700">
+          {{ club.description }}
+        </p>
+      </div>
+    </section>
+
+    <section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-2xl font-semibold tracking-tight text-slate-900">
+        Details
+      </h2>
+
+      <dl
+        class="mt-4 grid gap-4 text-sm leading-7 text-slate-700 sm:grid-cols-2"
+      >
+        <div v-if="club.meetingTime">
+          <dt class="font-semibold text-slate-900">Meeting time</dt>
+          <dd>{{ club.meetingTime }}</dd>
+        </div>
+
+        <div v-if="club.meetingPlace">
+          <dt class="font-semibold text-slate-900">Meeting place</dt>
+          <dd>{{ club.meetingPlace }}</dd>
+        </div>
+
+        <div v-if="club.contactEmail" class="sm:col-span-2">
+          <dt class="font-semibold text-slate-900">Contact</dt>
+          <dd>{{ club.contactEmail }}</dd>
+        </div>
+
+        <div v-if="club.contactNote" class="sm:col-span-2">
+          <dt class="font-semibold text-slate-900">Contact note</dt>
+          <dd>{{ club.contactNote }}</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section
+      v-if="club.firstTimeVisitorInfo"
+      class="rounded-2xl border border-amber-200 bg-amber-50 p-6"
+    >
+      <h2 class="text-2xl font-semibold tracking-tight text-slate-900">
+        First-time visitors
+      </h2>
+      <p class="mt-3 leading-8 text-slate-700">
+        {{ club.firstTimeVisitorInfo }}
       </p>
     </section>
 
-    <section>
-      <h2>Details</h2>
-
-      <p v-if="club.meetingTime">
-        <strong>Meeting time:</strong> {{ club.meetingTime }}
-      </p>
-
-      <p v-if="club.meetingPlace">
-        <strong>Meeting place:</strong> {{ club.meetingPlace }}
-      </p>
-
-      <p v-if="club.contactEmail">
-        <strong>Contact:</strong> {{ club.contactEmail }}
-      </p>
-
-      <p v-if="club.contactNote">
-        <strong>Contact note:</strong> {{ club.contactNote }}
-      </p>
-    </section>
-
-    <section v-if="club.firstTimeVisitorInfo">
-      <h2>First-time visitors</h2>
-      <p>{{ club.firstTimeVisitorInfo }}</p>
-    </section>
-
-    <section v-if="club.socialLinks">
-      <h2>Links</h2>
-      <ul>
+    <section
+      v-if="club.socialLinks"
+      class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+    >
+      <h2 class="text-2xl font-semibold tracking-tight text-slate-900">
+        Links
+      </h2>
+      <ul class="mt-4 grid gap-2 text-sm text-slate-700">
         <li v-if="club.socialLinks.website">
-          <a :href="club.socialLinks.website" target="_blank">Website</a>
+          <a
+            :href="club.socialLinks.website"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-emerald-800 hover:underline"
+          >
+            Website
+          </a>
         </li>
         <li v-if="club.socialLinks.instagram">
-          <a :href="club.socialLinks.instagram" target="_blank">Instagram</a>
+          <a
+            :href="club.socialLinks.instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-emerald-800 hover:underline"
+          >
+            Instagram
+          </a>
         </li>
         <li v-if="club.socialLinks.facebook">
-          <a :href="club.socialLinks.facebook" target="_blank">Facebook</a>
+          <a
+            :href="club.socialLinks.facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-emerald-800 hover:underline"
+          >
+            Facebook
+          </a>
         </li>
         <li v-if="club.socialLinks.other">
-          <a :href="club.socialLinks.other" target="_blank">More info</a>
+          <a
+            :href="club.socialLinks.other"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-emerald-800 hover:underline"
+          >
+            More info
+          </a>
         </li>
       </ul>
     </section>
