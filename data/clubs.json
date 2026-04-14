@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "brixies-brewers",
+    "name": "Brixie's Brewers",
+    "contactEmail": "brixiesbrewersil@gmail.com",
+    "socialLinks": {
+      "website": "https://www.brixiesbrewers.com/",
+      "facebook": "https://www.facebook.com/BrixiesBrewers"
+    }
+  },
+  {
+    "slug": "buzz-homebrew-club",
+    "name": "BUZZ Homebrew Club",
+    "contactEmail": "beer@buzzbrew.club"
+  },
+  {
+    "slug": "chaos",
+    "name": "CHAOS",
+    "contactEmail": "contact@chaosbrewclub.net",
+    "socialLinks": {
+      "website": "https://chaosbrewclub.org/",
+      "instagram": "https://www.instagram.com/chaosbrewclub/",
+      "facebook": "https://www.facebook.com/CHAOSBrewClub"
+    }
+  },
+  {
+    "slug": "chicago-beer-society",
+    "name": "Chicago Beer Society",
+    "contactEmail": "info@chibeer.org",
+    "socialLinks": {
+      "website": "https://chibeer.org/",
+      "instagram": "https://www.instagram.com/chicagobeersociety/",
+      "facebook": "https://www.facebook.com/ChicagoBeerSociety"
+    }
+  },
+  {
+    "slug": "club-wort",
+    "name": "Club Wort",
+    "contactEmail": "brewguy2@comcast.net",
+    "socialLinks": {
+      "website": "https://clubwort.net/",
+      "facebook": "https://www.facebook.com/ClubWort"
+    }
+  },
+  {
+    "slug": "evanston-homebrew-club",
+    "name": "Evanston Homebrew Club",
+    "contactEmail": "evanstonhomebrew@comcast.net",
+    "socialLinks": {
+      "website": "https://www.evanstonhomebrewclub.org/"
+    }
+  },
+  {
+    "slug": "gnome-brew",
+    "name": "Gnome Brew",
+    "contactEmail": "gnomes@gnomebrewshop.com",
+    "contactNote": "store email",
+    "socialLinks": {
+      "website": "https://gnomebrewshop.com/",
+      "instagram": "https://www.instagram.com/gnomebrew/",
+      "facebook": "https://www.facebook.com/GnomeBrewShop"
+    },
+    "meetingTime": "2nd Thursdays at 7:15 PM",
+    "meetingPlace": "Gnome Brew",
+    "firstTimeVisitorInfo": "Gnome Brew is not a homebrew club, but it hosts a monthly bottle share. New visitors are always welcome. For bottle shares, you can bring your own homebrew to share, but it is not required—people new to brewing are encouraged to come, taste, and learn. Events are informal, community-focused, and designed to be approachable for beginners.",
+    "description": "Gnome Brew is a homebrew supply shop in Chicago that serves as a hub for the local brewing community. In addition to selling ingredients and equipment, they host classes, educational talks, and public events focused on brewing techniques, beer styles, and fermentation science. Regular events include a monthly bottle share where brewers and beer enthusiasts gather to share beer, exchange feedback, and connect. While not a homebrew club itself, Gnome Brew actively supports and collaborates with local clubs and provides a welcoming space for both new and experienced brewers to learn and participate in the community."
+  },
+  {
+    "slug": "hops-homebrewers-pride-of-the-south-side",
+    "name": "Hops! - Homebrewers' Pride of the South Side, NFP (CHIHOPS)",
+    "contactEmail": "contact@chihops.com",
+    "socialLinks": {
+      "website": "https://chihops.org/",
+      "facebook": "https://www.facebook.com/ChiHops"
+    }
+  },
+  {
+    "slug": "ibru-homebrew-club",
+    "name": "IBru Homebrew Club",
+    "contactEmail": "IBRUhomebrewers@gmail.com"
+  },
+  {
+    "slug": "joliet-brewers-guild",
+    "name": "Joliet Brewers Guild",
+    "contactEmail": "jolietbrewersguild@gmail.com"
+  },
+  {
+    "slug": "logan-brewlevard-society",
+    "name": "Logan Brewlevard Society",
+    "contactEmail": "michael@cadilhac.name"
+  },
+  {
+    "slug": "north-urban-brewing-society",
+    "name": "North Urban Brewing Society (NUBS)",
+    "contactEmail": "dan.berger.2@gmail.com",
+    "socialLinks": {
+      "website": "https://nubsbrewclub.org/",
+      "instagram": "https://www.instagram.com/nubsbrewclub/",
+      "facebook": "https://www.facebook.com/NUBSBrewClub"
+    }
+  },
+  {
+    "slug": "square-kegs",
+    "name": "Square Kegs",
+    "contactEmail": "Paushabrad@gmail.com"
+  },
+  {
+    "slug": "urban-knaves-of-grain",
+    "name": "Urban Knaves of Grain",
+    "contactEmail": "officers@knaves.org"
+  }
+]
